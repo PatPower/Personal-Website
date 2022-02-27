@@ -9,6 +9,14 @@
     padding: 4px;
     font-family: var(--font-family);
 }
+.skills-category {
+    width: 400px;
+}
+.skills-category > h3 {
+    color: #fff;
+    padding: 4px;
+    font-family: var(--font-family);
+}
 .skills-container {
     background: rgb(0,212,255);
     background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 51%, rgba(2,0,36,1) 100%);
@@ -17,4 +25,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.skills-container-categories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }

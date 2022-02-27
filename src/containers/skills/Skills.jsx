@@ -18,11 +18,11 @@ const Skills = () => {
                         Tools
                     </h3>
                 </div>
-                <div className="skills-category">
+{/*                 <div className="skills-category">
                 <h3>
                         
                     </h3>
-                </div>
+                </div> */}
             </div>
         </div>
     )

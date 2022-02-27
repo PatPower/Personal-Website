@@ -10,6 +10,9 @@
 .projects-container-cards {
     flex-direction: row;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
 .projects-container > h1 {
     color: #fff;
