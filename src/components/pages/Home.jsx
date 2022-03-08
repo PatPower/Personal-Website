@@ -9,9 +9,9 @@ function Home() {
     return (
         <>
             <HeroSection />
+            <AboutMe/>
             <Projects/>
             <Skills/>
-            <AboutMe/>
             <Footer />
         </>
     )

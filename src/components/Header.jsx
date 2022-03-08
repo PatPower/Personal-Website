@@ -39,28 +39,25 @@ function Header() {
                     click ? "nav-menu active" : "nav-menu"
                 }>
                     <li className='nav-item'>
-                        <a href='#home' className='nav-links'
+                        <a href='/#about-me' className='nav-links'
                             onClick={closeMobileMenu}>
-                            Home
+                            About Me
                         </a>
                     </li>
                     <li className='nav-item'>
-                        <a href="#projects" className='nav-links'
+                        <a href="/#projects" className='nav-links'
                             onClick={closeMobileMenu}>
                             Projects
                         </a>
                     </li>
                     <li className='nav-item'>
                         <a
-                            href='#skills' className='nav-links'
+                            href='/#skills' className='nav-links'
                             onClick={closeMobileMenu}>
                             Skills
                         </a>
                     </li>
-                </ul>
-                {
-                    button && <Button buttonStyle='btn--outline'>About Me</Button>
-                } </div>
+                </ul> </div>
         </nav>
     </>)
 }
