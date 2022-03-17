@@ -42,7 +42,7 @@ function Card({ title, videoUrl, body, skills, githubUrl, demoUrl, website}) {
           }
                     {
             !!(website) ?
-              <Link className="social-icon-link github" to={website} aria-label='Github'>
+              <Link className="social-icon-link github" to={website} target="_blank"  aria-label='Github'>
                 <i className='card fa fa-gamepad' />
                 <p>Website</p>
               </Link>

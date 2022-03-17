@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
 import './Header.css'
 function Header() {
     const [click, setClick] = useState(false);

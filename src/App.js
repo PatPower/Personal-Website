@@ -6,7 +6,6 @@ import Home from './components/pages/Home'
 function App() {
   return (
     <>
-      <Header />
       <Router>
         <Routes>
           <Route path='/' exact element={<Home />} />
