@@ -1,5 +1,5 @@
 .skillBox-container {
-    width: 310px;
+
     overflow: hidden;
     display: flex;
     animation: ease-in;
@@ -31,6 +31,6 @@
 .skillBox-area {
     display: flex;
     flex-wrap: wrap;
-    width: 310px;
+    width: 300px;
 }
 

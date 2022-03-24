@@ -1,11 +1,11 @@
 .projects-container {
-    background: #0F1624;
-    padding: 4rem 0 2 2rem 0;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+
+
 }
 .projects-container-cards {
     flex-direction: row;
