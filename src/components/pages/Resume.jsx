@@ -8,16 +8,12 @@ import '@react-pdf-viewer/core/lib/styles/index.css';
 function Resume() {
     const getFilePluginInstance = getFilePlugin();
     const { Download } = getFilePluginInstance;
-
+    var scaleValue = (window.innerWidth >= 768) ?  1.8 : 0.55;
+    var paddingValue = (window.innerWidth >= 768) ?  '0px 0px 0px 0px' :'18vh 0px 0px 0px';
     return (
         <>
             <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.13.216/build/pdf.worker.min.js">
-                <div
-                    style={{
-                        height: '100vh',
-                    }}
-                >
-                    <div
+            <div
                         style={{
                             alignItems: 'center',
                             borderBottom: '1px solid rgba(0, 0, 0, 0.1)',
@@ -45,9 +41,16 @@ function Resume() {
                             )}
                         </Download>
                     </div>
+                <div
+                    style={{
+                        padding: paddingValue,
+                        height: '100vh',
+                    }}
+                >
+
                     <Viewer
                         fileUrl='/images/Patent_Li_Game_Programmer.pdf'
-                        defaultScale={1.8}
+                        defaultScale={scaleValue}
                         theme="dark"
                         plugins={[getFilePluginInstance]}
                     />

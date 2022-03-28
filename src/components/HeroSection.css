@@ -151,7 +151,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width:60px;
+    width:40px;
     height: 34px;
     border-radius: 0px 5px 5px 0px;
     background-color:rgb(255, 103, 103);
@@ -208,6 +208,25 @@
     margin: 5px 5px 5px 1px;
 }
 
+.tooltip .tooltiptext {
+    opacity: 0;
+    width:80px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(107, 107, 107);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    margin-left: 150px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    transition: opacity 0.5s;
+  }
+  
+  .tooltip.active .tooltiptext {
+    transition: opacity 0.5s;
+    opacity: 1;
+  }
 
 @media screen and (max-width:1600px) {
     .hero-container-left > h1 {
@@ -238,24 +257,10 @@
     .btn {
         width: 100%;
     }
+
+    .tooltip .tooltiptext {
+        margin-left: 0px;
+        margin-top: 80px;
+    }
 }
  
-  .tooltip .tooltiptext {
-    opacity: 0;
-    width:80px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(107, 107, 107);
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    margin-left: 150px;
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    transition: opacity 0.5s;
-  }
-  
-  .tooltip.active .tooltiptext {
-    transition: opacity 0.5s;
-    opacity: 1;
-  }
