@@ -8,7 +8,7 @@ function Footer() {
                 <div className="social-media-wrap">
                     <div className="footer-logo">
                         <Link to="/" className="social-logo">
-                            Pat <i className="fab fa-typo3"></i>
+                            Pat
                         </Link>
                     </div>
                     <div className="social-icons">

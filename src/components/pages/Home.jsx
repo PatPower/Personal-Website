@@ -3,7 +3,7 @@ import '../../App.css'
 import './home.css'
 import Footer from '../Footer';
 import HeroSection from '../HeroSection'
-import { AboutMe, Projects, Skills } from '../../containers'
+import {Projects, Skills } from '../../containers'
 
 function Home() {
     return (
@@ -13,6 +13,7 @@ function Home() {
                 <Projects />
                 <Skills />
             </div>
+            <Footer />
         </>
     )
 }
