@@ -1,5 +1,4 @@
 .skillBox-container {
-
     overflow: hidden;
     display: flex;
     animation: ease-in;
@@ -7,11 +6,16 @@
     margin-right: 30px;
 }
 
-.skillBox-container h3 {
-    color: #fff;
+.skillBox-container p {
+    color: rgb(212, 212, 212);
     margin-top: 10px;
     margin-left: 6px;
     align-self: center;
+}
+
+.skillBox h5 {
+    font-size: 12px;
+    font-family: var(--font-family);
 }
 
 .skillBox {

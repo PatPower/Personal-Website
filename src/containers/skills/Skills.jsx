@@ -5,13 +5,10 @@ import SkillsBox from '../../components/SkillsBox/SkillsBox';
 const Skills = () => {
     return (
         <div className='skills-container' id='skills'>
-            <h1>
+            <h1 className='gradient__text'>
                 Skills
             </h1>
             <div className="skills-big-container">
-                <p>
-                    I mainly work on game development for personal games but I also have experience with mobile applications and web development.
-                </p>
                 <div className="skills-container-categories">
                     <SkillsBox category='Languages' skills={['C#', 'Java', 'C++', 'Swift', 'Javascript', 'Python', 'SQL', 'C', 'PHP', 'R']} />
                     <SkillsBox category='Engines/Frameworks' skills={['Unity','Unreal Engine', 'Gamemaker Studio', 'Node.js', 'React']} />

@@ -4,9 +4,9 @@ import './skillsBox.css'
 function SkillsBox({ category, skills }) {
   return (
     <div className="skillBox-container">
-      <h3>
+      <p>
         {category}
-      </h3>
+      </p>
       <div className="skillBox-area">
         {skills.map((skill) => (
           <div className="skillBox">

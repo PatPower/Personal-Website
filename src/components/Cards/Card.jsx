@@ -26,7 +26,7 @@ function Card({ title, videoUrl, body, skills, githubUrl, demoUrl, website}) {
         <div className="button-area">
           {
             !!(githubUrl) ?
-              <a className="social-icon-link github" href={githubUrl} target="_blank" aria-label='Github'>
+              <a className="link-btn" href={githubUrl} target="_blank" rel="noopener noreferrer"  aria-label='Github'>
                 <i className="card fab fa-github"></i>
                 <p>Github</p>
               </a>
@@ -34,7 +34,7 @@ function Card({ title, videoUrl, body, skills, githubUrl, demoUrl, website}) {
           }
           {
             !!(demoUrl) ?
-              <a className="social-icon-link github" href={demoUrl} target="_blank" aria-label='Github'>
+              <a className="link-btn" href={demoUrl} target="_blank" rel="noopener noreferrer" aria-label='Github'>
                 <i className='card fa fa-gamepad' />
                 <p>Play Demo</p>
               </a>
@@ -42,10 +42,10 @@ function Card({ title, videoUrl, body, skills, githubUrl, demoUrl, website}) {
           }
                     {
             !!(website) ?
-              <Link className="social-icon-link github" to={website} target="_blank"  aria-label='Github'>
-                <i className='card fa fa-gamepad' />
+              <a className="link-btn" href={website} target="_blank"  aria-label='Github'>
+                <i className='card fa fa-globe' />
                 <p>Website</p>
-              </Link>
+              </a>
               : ''
           }
         </div>

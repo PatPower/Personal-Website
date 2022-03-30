@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import './Footer.css'
 function Footer() {
     return (
@@ -7,14 +6,19 @@ function Footer() {
             <section className="social-media">
                 <div className="social-media-wrap">
                     <div className="footer-logo">
-                        <Link to="/" className="social-logo">
-                            Pat
-                        </Link>
+                        <div className="social-logo">
+                            Patent Li
+                        </div>
+                        <p>2022</p>
                     </div>
+                    <p></p>
                     <div className="social-icons">
-                        <Link className="social-icon-link linkedin" to="/" target="_blank" aria-label='Linkedin'>
+                        <a className="social-icon-link linkedin" href='https://www.linkedin.com/in/patentli/' target="_blank" rel="noopener noreferrer" aria-label='Linkedin'>
                             <i className="fab fa-linkedin"></i>
-                        </Link>
+                        </a>
+                        <a className="social-icon-link github" href='https://github.com/PatPower/' target="_blank" rel="noopener noreferrer" aria-label='Github'>
+                            <i className="fab fa-github"></i>
+                        </a>
                     </div>
                 </div>
             </section>
