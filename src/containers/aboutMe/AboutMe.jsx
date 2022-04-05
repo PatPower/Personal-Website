@@ -9,7 +9,8 @@ const AboutMe = () => {
             </h1>
             <p>
                 Hi, I am an aspiring software developer in the Toronto area. I am currently working on a project called Hacking Game and it is still on the early stages of development.
-                You can learn more about the game here.
+                You can learn more about the game <a href="/hackinggame">here</a>.
+                
                 <br/>
                 <br/>
                 I grew up programming modifications for PC games and that sprouted my passion for creating games. I have used several game engines such as Unity, Unreal Engine, Game Maker Studio, Godot and more.

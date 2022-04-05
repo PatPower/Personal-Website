@@ -28,6 +28,13 @@
     max-width: 600px;
 }
 
+.aboutMe-container a {
+    color: rgb(89, 167, 255);
+    font-family: var(--font-family);
+    text-decoration: underline;
+    align-self: flex-start;
+}
+
 @media screen and (max-width:1390px) {
     .aboutMe-container h1 {
         margin: 10px 0px 10px 40px;

@@ -9,11 +9,11 @@ function Home() {
     return (
         <>
             <HeroSection />
+            <AboutMe/>
             <div className="project-skills-box">
                 <Projects />
                 <Skills />
             </div>
-            <AboutMe/>
             <Footer />
         </>
     )
