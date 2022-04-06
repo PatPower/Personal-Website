@@ -65,8 +65,7 @@ function HackingGame() {
                 ctx.closePath();
                 if (object.y < 50) {
                     // Remove off screen pixels
-                    if (object.y < 0)
-                        objects.shift();
+                    if (object.y < 0) objects.shift();
                     ctx.fillStyle = "rgb(0, " + 80 * (object.y / 50) + ", 0)";
                 } else {
                     ctx.fillStyle = "rgb(0, 80, 0)";
@@ -75,7 +74,6 @@ function HackingGame() {
             }
         }
     }, []);
-
     return (
         <>
             <div className="hackinggame-container">
@@ -86,6 +84,9 @@ function HackingGame() {
                     muted
                 />
                 <h1>Hacking Game</h1>
+                <p>
+                    Explore at your own risk.
+                </p>
             </div>
             <div className="about-game">
                 <video
@@ -97,24 +98,21 @@ function HackingGame() {
                 <div className="about-game-description">
                     <p>
                         Scavenge the internet and discover the secrets of this
-                        world but be careful, don't trust everyone you meet
+                        world but be careful, don't trust everything you see
                         online.
                     </p>
-                    <br></br>
-                    <h2>Features</h2>
+                    <br/>
                     <ul>
                         <li>Explore the web</li>
                         <li>Find secrets embedded in the computer</li>
-                        <li>
-                            Make friends or enemies with people you meet online
-                        </li>
+                        <li>Make friends or enemies with people you meet online</li>
                         <li>Dozens of applications to unlock</li>
                     </ul>
                 </div>
             </div>
             <div className="hgame-features">
                 <canvas className="hgame-canvas" ref={hGameCanvas} />
-                <div className="hgame-horizontal1">
+                <div className="hgame-horizontal">
                     <div className="game-feature-area">
                         <h1>Explore the Web</h1>
                         <video
@@ -144,7 +142,7 @@ function HackingGame() {
                         </p>
                     </div>
                 </div>
-                <div className="hgame-horizontal2">
+                <div className="hgame-horizontal">
                     <div className="game-feature-area">
                         <h1>File System</h1>
                         <video
@@ -153,10 +151,7 @@ function HackingGame() {
                             loop
                             muted
                         />
-                        <p>
-                            Download and manage files that you have downloaded
-                            or found.
-                        </p>
+                        <p>Manage files that you have downloaded or found.</p>
                     </div>
                     <div className="game-feature-area">
                         <h1>Email</h1>
@@ -169,6 +164,12 @@ function HackingGame() {
                         <p>Send and receive emails and files.</p>
                     </div>
                 </div>
+                <h1>Game is still in developement</h1>
+                <p>
+                    Demo out soon. Check back for updates.
+                    <br/>
+                    Content on this page is subject to change
+                </p>
             </div>
         </>
     );
