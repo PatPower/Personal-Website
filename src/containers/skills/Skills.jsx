@@ -11,7 +11,7 @@ const Skills = () => {
             <div className="skills-big-container">
                 <div className="skills-container-categories">
                     <SkillsBox category='Languages' skills={['C#', 'Java', 'C++', 'Swift', 'Javascript', 'Python', 'SQL', 'C', 'PHP', 'R']} />
-                    <SkillsBox category='Engines/Frameworks' skills={['Unity','Unreal Engine', 'Gamemaker Studio', 'Node.js', 'React']} />
+                    <SkillsBox category='Engines/Frameworks' skills={['Unity','Unreal Engine', 'Gamemaker Studio', 'jQuery', 'Node.js', 'React']} />
                     <SkillsBox category='Tools/Other' skills={['Git', 'Xcode', 'Google Cloud Platform', 'Trello','Adobe Photoshop','FL Studio', 'Sony Vegas Pro']}/>
                 </div>
             </div>
