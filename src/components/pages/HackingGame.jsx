@@ -84,9 +84,7 @@ function HackingGame() {
                     muted
                 />
                 <h1>Hacking Game</h1>
-                <p>
-                    Explore at your own risk.
-                </p>
+                <p>.</p>
             </div>
             <div className="about-game">
                 <video
@@ -101,11 +99,13 @@ function HackingGame() {
                         world but be careful, don't trust everything you see
                         online.
                     </p>
-                    <br/>
+                    <br />
                     <ul>
                         <li>Explore the web</li>
                         <li>Find secrets embedded in the computer</li>
-                        <li>Make friends or enemies with people you meet online</li>
+                        <li>
+                            Make friends or enemies with people you meet online
+                        </li>
                         <li>Dozens of applications to unlock</li>
                     </ul>
                 </div>
@@ -167,9 +167,18 @@ function HackingGame() {
                 <h1>Game is still in developement</h1>
                 <p>
                     Demo out soon. Check back for updates.
-                    <br/>
-                    Content on this page is subject to change
+                    <br />
                 </p>
+                <div className="unity-text">
+                    <p>Made with</p>
+                    <a href="https://unity.com/">
+                        <img
+                            className="unity-img"
+                            src="/images/img-unity.png"
+                            alt="Unity"
+                        />
+                    </a>
+                </div>
             </div>
         </>
     );
