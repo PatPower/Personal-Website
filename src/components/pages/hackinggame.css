@@ -114,6 +114,16 @@
     color: white;
 }
 
+.unity-text {
+    display: flex;
+    align-items:center;
+    align-self: center;
+}
+
+.unity-img  {
+    width: 100px;
+}
+
 @media screen and (max-width:1300px) {
     .hgame-horizontal {
         flex-direction: column;
