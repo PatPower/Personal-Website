@@ -7,7 +7,7 @@
 }
 
 .projects-container h1 {
-    margin: 10px 0px 10px 7px;
+    margin: 10px 0px 10px 100px;
     align-self:flex-start;
     font-size: 40px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.377);
@@ -16,6 +16,7 @@
 }
 
 .projects-container-cards {
+    padding-left: 90px;
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
@@ -33,5 +34,8 @@
 @media screen and (max-width:1390px) {
     .projects-container h1 {
         margin: 10px 0px 10px 40px;
+    }
+    .projects-container-cards {
+        padding-left: 0px;
     }
 }

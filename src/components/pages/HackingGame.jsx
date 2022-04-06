@@ -84,7 +84,7 @@ function HackingGame() {
                     muted
                 />
                 <h1>Hacking Game</h1>
-                <p>.</p>
+                <p>Explore the web and hack your way to glory</p>
             </div>
             <div className="about-game">
                 <video
@@ -154,14 +154,14 @@ function HackingGame() {
                         <p>Manage files that you have downloaded or found.</p>
                     </div>
                     <div className="game-feature-area">
-                        <h1>Email</h1>
+                        <h1>Find Accounts</h1>
                         <video
-                            src="/videos/hackinggame/video-mail.mp4"
+                            src="/videos/hackinggame/video-loginaccount.mp4"
                             autoPlay
                             loop
                             muted
                         />
-                        <p>Send and receive emails and files.</p>
+                        <p>Use tools and manipulate users to get their accounts for your own gain.</p>
                     </div>
                 </div>
                 <h1>Game is still in developement</h1>
