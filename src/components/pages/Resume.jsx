@@ -49,7 +49,7 @@ function Resume() {
                 >
 
                     <Viewer
-                        fileUrl='/images/Patent_Li_Game_Programmer.pdf'
+                        fileUrl='/images/Patent-Li-Resume.pdf'
                         defaultScale={scaleValue}
                         theme="dark"
                         plugins={[getFilePluginInstance]}
