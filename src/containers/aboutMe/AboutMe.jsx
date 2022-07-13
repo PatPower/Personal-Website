@@ -8,7 +8,7 @@ const AboutMe = () => {
                 About Me
             </h1>
             <p>
-                Hi, I am an aspiring software developer in the Toronto area. I am currently working on a project called Hacking Game and it is still on the early stages of development.
+                Hi, I'm a software developer working at General Motors Canada. I'm also currently working on a project called Hacking Game and it is still on the early stages of development.
                 You can learn more about the game <a href="/hackinggame">here</a>.
                 
                 <br/>
