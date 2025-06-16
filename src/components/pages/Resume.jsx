@@ -1,6 +1,6 @@
 import React from 'react'
-import { Viewer, Worker, SpecialZoomLevel } from '@react-pdf-viewer/core';
-import { getFilePlugin, RenderDownloadProps } from '@react-pdf-viewer/get-file';
+import { Viewer, Worker } from '@react-pdf-viewer/core';
+import { getFilePlugin } from '@react-pdf-viewer/get-file';
 
 // Import the styles
 import '@react-pdf-viewer/core/lib/styles/index.css';
@@ -10,9 +10,13 @@ function Resume() {
     const { Download } = getFilePluginInstance;
     var scaleValue = (window.innerWidth >= 768) ? 1.8 : 0.55;
     var paddingValue = (window.innerWidth >= 768) ? '0px 0px 0px 0px' : '18vh 0px 0px 0px';
+
+    // Use the worker from node_modules instead of CDN
+    const workerSrc = `https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`;
+
     return (
         <>
-            <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.13.216/build/pdf.worker.min.js">
+            <Worker workerUrl={workerSrc}>
                 <div
                     style={{
                         alignItems: 'center',
@@ -47,7 +51,6 @@ function Resume() {
                         height: '100vh',
                     }}
                 >
-
                     <Viewer
                         fileUrl='/images/PatentLiResume.pdf'
                         defaultScale={scaleValue}
