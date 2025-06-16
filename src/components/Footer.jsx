@@ -9,7 +9,7 @@ function Footer() {
                         <div className="social-logo">
                             Patent Li
                         </div>
-                        <p>2022</p>
+                        <p>2025</p>
                     </div>
                     <p></p>
                     <div className="social-icons">

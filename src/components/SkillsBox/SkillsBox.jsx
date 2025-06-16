@@ -8,10 +8,12 @@ function SkillsBox({ category, skills }) {
         {category}
       </p>
       <div className="skillBox-area">
-        {skills.map((skill) => (
-          <div className="skillBox">
+        {skills.map((skill, index) => (
+          <div className="skillBox" key={index}>
             <h5>
-              {skill}
+              <a href={skill.url} target="_blank" rel="noopener noreferrer">
+                {skill.name}
+              </a>
             </h5>
           </div>
         ))}

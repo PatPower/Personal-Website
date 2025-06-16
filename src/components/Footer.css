@@ -31,16 +31,21 @@
 
 .footer-link-items h2 {
     margin-bottom: 16px;
+    font-family: var(--font-family);
+    font-weight: 600;
 }
 
 .footer-link-items > h2 {
-    color: #fff
+    color: #fff;
+    font-family: var(--font-family);
 }
 
 .footer-link-items a {
     color: #fff;
     text-decoration: none;
     margin-bottom: 8px;
+    font-family: var(--font-family);
+    font-weight: 400;
 }
 
 .footer-link-items a:hover {
@@ -111,6 +116,8 @@
 .footer-logo p {
     color: #fff;
     font-size: 15px;
+    font-family: var(--font-family);
+    font-weight: 400;
 }
 
 .social-logo {

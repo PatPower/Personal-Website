@@ -1,7 +1,8 @@
 .project-skills-box {
     display: flex;
-    flex-direction: row;
-    justify-content: first;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: #0F1624;
 }
 

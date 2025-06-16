@@ -10,7 +10,7 @@ function HeroSection() {
             <div className="hero-container-main">
                 <div className="hero-container-left">
                     <h1 className='gradient__text'>PATENT LI</h1>
-                    <p>Recently graduated from the University of Toronto. I have been programming for 7+ years and created small personal games using several game engines and programming languages such as Unity, Unreal Engine, Game Maker Studio, Java, C#, and JavaScript. Started out in 2015 creating server plugins games and moved on to creating real playable games.</p>
+                    <p>University of Toronto graduate with over 10 years of programming experience. Started in 2015 building server plugins and multiplayer mods, later creating full games using Unity, Unreal Engine, and Game Maker Studio with languages like C#, Java, and JavaScript.</p>
                     <div className="social-links">
                         <div className="hero-btns">
                             <a className="hero-social-icon hero-github" href='https://github.com/PatPower/' target="_blank" rel="noopener noreferrer" aria-label='Github'>
@@ -27,11 +27,11 @@ function HeroSection() {
 
                         <div className="hero-btns">
                             <div className="hero-mail">
-                                <a className='send-mail-btn' href='mailto:patent.li@mail.utoronto.ca'>
+                                <a className='send-mail-btn' href='mailto:lipatented@gmail.com'>
                                     <i className="card fa fa-envelope"></i>
                                 </a>
                                 <div className="send-mail-text">
-                                    <p>patent.li@mail.utoronto.ca</p>
+                                    <p>lipatented@gmail.com</p>
                                 </div>
                                 <div className="copy-btn tooltip" onClick={copyToClipboard}>
                                     <i id="clipboard-icon" className="clipboard-icon fa fa-clipboard"></i>
@@ -60,8 +60,8 @@ function HeroSection() {
     )
 }
 function copyToClipboard() {
-    navigator.clipboard.writeText(('patent.li@mail.utoronto.ca'));
-    console.log('Copied to clipboard: ', 'patent.li@mail.utoronto.ca');
+    navigator.clipboard.writeText(('lipatented@gmail.com'));
+    console.log('Copied to clipboard: ', 'lipatented@gmail.com');
 
     document.getElementById("clipboard-icon").className = "clipboard-icon-clicked fa fa-clipboard";
 
