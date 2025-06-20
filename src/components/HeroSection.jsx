@@ -351,7 +351,7 @@ function HeroSection() {
             <div className="hero-container-main">
                 <div className="hero-container-left">
                     <h1 className='gradient__text'>PATENT LI</h1>
-                    <p>University of Toronto graduate with over 10 years of programming experience. Started in 2015 building server plugins and multiplayer mods, later creating full games using Unity, Unreal Engine, and Game Maker Studio with languages like C#, Java, and JavaScript.</p>
+                    <p>University of Toronto graduate with 3 years’ experience in Android development at General Motors. Skilled in scalable architecture, clean code, and teamwork. Passionate about building impactful software and growing as a developer, with game development experience in Unity and Unreal Engine.</p>
                     <div className="social-links">
                         <div className="hero-btns">
                             <a className="hero-social-icon hero-github" href='https://github.com/PatPower/' target="_blank" rel="noopener noreferrer" aria-label='Github'>

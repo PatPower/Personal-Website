@@ -2,19 +2,36 @@ import React, { useRef } from 'react'
 import { Link } from 'react-router-dom';
 import './card.css'
 
-function Card({ title, videoUrl, body, skills, githubUrl, demoUrl, website}) {
+function Card({ title, videoUrl, body, skills, githubUrl, demoUrl, website }) {
   const vidRef = useRef(null);
   const playVideo = () => {
-    vidRef.current.play();
+    if (vidRef.current) {
+      vidRef.current.play().catch(error => {
+        // Handle autoplay failure silently
+        console.log('Video autoplay failed:', error);
+      });
+    }
   }
   const stopVideo = () => {
-    vidRef.current.pause();
+    if (vidRef.current) {
+      vidRef.current.pause();
+    }
   }
   return (
     <div className="card-container" onMouseEnter={playVideo} onMouseLeave={stopVideo}>
 
       <div className="video-container">
-        <video ref={vidRef} src={videoUrl} loop muted />
+        <video
+          ref={vidRef}
+          src={videoUrl}
+          loop
+          muted
+          playsInline
+          preload="metadata"
+          webkit-playsinline="true"
+          controls={false}
+          disablePictureInPicture
+        />
       </div>
       <div className="card-content">
         <div className="card-title">
@@ -26,7 +43,7 @@ function Card({ title, videoUrl, body, skills, githubUrl, demoUrl, website}) {
         <div className="button-area">
           {
             !!(githubUrl) ?
-              <a className="link-btn" href={githubUrl} target="_blank" rel="noopener noreferrer"  aria-label='Github'>
+              <a className="link-btn" href={githubUrl} target="_blank" rel="noopener noreferrer" aria-label='Github'>
                 <i className="card fab fa-github"></i>
                 <p>Github</p>
               </a>
@@ -40,9 +57,9 @@ function Card({ title, videoUrl, body, skills, githubUrl, demoUrl, website}) {
               </a>
               : ''
           }
-                    {
+          {
             !!(website) ?
-              <a className="link-btn" href={website} target="_blank"  aria-label='Github'>
+              <a className="link-btn" href={website} target="_blank" aria-label='Github'>
                 <i className='card fa fa-globe' />
                 <p>Website</p>
               </a>

@@ -1,23 +1,63 @@
 .card-container {
-    background-color: rgb(182, 195, 224);
+    background: rgba(20, 0, 20, 0.3);
+    border: 2px solid #ff0080;
     width: 330px;
     height: 400px;
     overflow: hidden;
-    box-shadow: 0px 0px 15px -5px;
-
+    box-shadow: 
+        0 0 15px rgba(255, 0, 128, 0.3),
+        inset 0 0 15px rgba(255, 0, 128, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     margin: 10px;
     position: relative;
-    border-radius: 5px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
 .card-container:hover {
-    background-color: rgb(197, 206, 224);
+    background: rgba(20, 0, 20, 0.5);
+    box-shadow: 
+        0 0 25px rgba(255, 0, 128, 0.5),
+        inset 0 0 20px rgba(255, 0, 128, 0.15);
+    transform: translateY(-5px);
+}
+
+.card-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 2px,
+            rgba(255, 0, 128, 0.03) 2px,
+            rgba(255, 0, 128, 0.03) 4px
+        );
+    border-radius: 6px;
+    pointer-events: none;
+    z-index: 0;
 }
 
 .video-container video{
     overflow: hidden;
     height: 200px;
     object-fit: fill;
+    width: 100%;
+    background-color: #000;
+}
+
+/* iOS specific video fixes */
+.video-container video::-webkit-media-controls {
+    display: none !important;
+}
+
+.video-container video::-webkit-media-controls-enclosure {
+    display: none !important;
 }
 
 .card-content {
@@ -33,6 +73,8 @@
     font-weight: 600;
     font-size: 22px;
     font-family: var(--font-family);
+    color: #ff0080;
+    text-shadow: 0 0 8px rgba(255, 0, 128, 0.4);
 }
 
 .card-body p {
@@ -40,6 +82,7 @@
     font-size: 14px;
     font-family: var(--font-family);
     line-height: 1.4;
+    color: #ff80c0;
 }
 
 .skillBox-area-card {
@@ -47,34 +90,63 @@
     display: flex;
     flex-direction: row;
     bottom: 10px;
+    z-index: 1;
 }
+
+.skillBox-area-card .skillBox {
+    background: rgba(255, 0, 128, 0.15);
+    border: 1px solid #ff0080;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-right: 6px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.skillBox-area-card .skillBox h5 {
+    color: #ff80c0;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0;
+    font-family: var(--font-family);
+    text-shadow: 0 0 4px rgba(255, 0, 128, 0.3);
+}
+
 .link-btn {
-    background-color: rgb(141, 141, 141);
-    padding: 0px 5px 0px 5px;
+    background: rgba(255, 0, 128, 0.2);
+    border: 1px solid #ff0080;
+    padding: 5px 8px;
     border-radius: 5px;
     display: flex;
     margin: 5px 10px 5px 0px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 .link-btn:hover {
-    background-color: rgb(163, 163, 163);
+    background: rgba(255, 0, 128, 0.4);
+    box-shadow: 0 0 10px rgba(255, 0, 128, 0.4);
+    transform: translateY(-2px);
 }
 .link-btn p {
     margin-top: 5px;
-    color:#fff;
+    color: #fff;
     font-size: 15px;
     font-weight: 600;
     font-family: var(--font-family);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
 }
 .card {
     font-size: 20px;
     color: #fff;
     margin: 5px 5px 5px 1px;
+    filter: drop-shadow(0 0 3px rgba(255, 0, 128, 0.3));
 }
 
 
 .button-area {
     position: absolute;
-    bottom: 50px;
+    bottom: 40px;
     display: flex;
 }
 @media screen and (max-width:656px) {
@@ -82,7 +154,8 @@
         color: #fff;
     }
     .card-container{
-        background-color: transparent;
+        background: rgba(20, 0, 20, 0.4);
+        border: 1px solid #ff0080;
         transform: scale(1);
         height: 200px;
     }

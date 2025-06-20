@@ -82,6 +82,11 @@ function HackingGame() {
                     autoPlay
                     loop
                     muted
+                    playsInline
+                    preload="metadata"
+                    webkit-playsinline="true"
+                    controls={false}
+                    disablePictureInPicture
                 />
                 <h1>Hacking Game</h1>
                 <p>Explore the web and hack your way to glory</p>
@@ -92,6 +97,11 @@ function HackingGame() {
                     autoPlay
                     loop
                     muted
+                    playsInline
+                    preload="metadata"
+                    webkit-playsinline="true"
+                    controls={false}
+                    disablePictureInPicture
                 />
                 <div className="about-game-description">
                     <p>
@@ -120,6 +130,11 @@ function HackingGame() {
                             autoPlay
                             loop
                             muted
+                            playsInline
+                            preload="metadata"
+                            webkit-playsinline="true"
+                            controls={false}
+                            disablePictureInPicture
                         />
                         <p>
                             Explore what this world has to offer and find useful
@@ -134,6 +149,11 @@ function HackingGame() {
                             autoPlay
                             loop
                             muted
+                            playsInline
+                            preload="metadata"
+                            webkit-playsinline="true"
+                            controls={false}
+                            disablePictureInPicture
                         />
 
                         <p>
@@ -150,6 +170,11 @@ function HackingGame() {
                             autoPlay
                             loop
                             muted
+                            playsInline
+                            preload="metadata"
+                            webkit-playsinline="true"
+                            controls={false}
+                            disablePictureInPicture
                         />
                         <p>Manage files that you have downloaded or found.</p>
                     </div>
@@ -160,6 +185,11 @@ function HackingGame() {
                             autoPlay
                             loop
                             muted
+                            playsInline
+                            preload="metadata"
+                            webkit-playsinline="true"
+                            controls={false}
+                            disablePictureInPicture
                         />
                         <p>Use tools and manipulate users to get their accounts for your own gain.</p>
                     </div>

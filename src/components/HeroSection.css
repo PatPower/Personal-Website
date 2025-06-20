@@ -74,13 +74,17 @@
 .social-links {
     margin-top: 25px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 .hero-btns {
-    margin-top:10px;
+    margin: 0;
+    display: flex;
+    align-items: center;
 }
 
 .hero-btns .btn {
@@ -93,12 +97,14 @@
 
 .hero-social-icon{
     display: flex;
-    justify-content: first;
+    justify-content: center;
     align-items: center;
     width: fit-content;
-    padding: 3px 15px 3px 15px;
+    padding: 8px 15px;
     border-radius: 5px;
     color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 .hero-github {
@@ -111,9 +117,11 @@
 
 .hero-github p {
     color:#fff;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     font-family: var(--font-family);
+    margin: 0;
+    margin-left: 8px;
 }
 
 .hero-linkedin {
@@ -132,9 +140,11 @@
 
 .hero-linkedin p{
     color:#fff;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     font-family: var(--font-family);
+    margin: 0;
+    margin-left: 8px;
 }
 
 .hero-resume {
@@ -153,9 +163,11 @@
 
 .hero-resume p{
     color:#fff;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
     font-family: var(--font-family);
+    margin: 0;
+    margin-left: 8px;
 }
 
 .hero-mail {
@@ -163,6 +175,8 @@
     width: fit-content;
     display: flex;
     border-radius: 5px;
+    align-items: center;
+    overflow: hidden;
 }
 
 .card.fa-envelope {
@@ -173,9 +187,11 @@
 
 .hero-mail p{
     color:#fff;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     font-family: var(--font-family);
+    margin: 0;
+    white-space: nowrap;
 }
 
 .clipboard-btn {
@@ -187,11 +203,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width:40px;
-    height: 34px;
+    width: 40px;
+    height: auto;
+    padding: 8px 0;
     border-radius: 0px 5px 5px 0px;
     background-color:rgb(255, 103, 103);
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .copy-btn-clicked {
@@ -212,24 +230,23 @@
 .send-mail-btn {
     background-color:#eb4b4b;
     border-radius: 5px 0px 0px 5px;
-    padding: 0px 0px 0px 10px;
-    height: 36px;
+    padding: 8px 10px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 .send-mail-text{
     display: flex;
-    justify-content: first;
+    justify-content: center;
     align-items: center;
     width: fit-content;
     color: #fff;
-    padding-right: 10px;
-}
-
-.send-mail-btn:hover {
-    background-color:rgb(255, 145, 145);
+    padding: 8px 10px;
+    background-color: #eb4b4b;
 }
 
 .clipboard-icon {
@@ -246,17 +263,18 @@
 
 .tooltip .tooltiptext {
     opacity: 0;
-    width:80px;
+    width: 80px;
     background-color: rgb(255, 255, 255);
     color: rgb(107, 107, 107);
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-    margin-left: 150px;
-    /* Position the tooltip */
     position: absolute;
     z-index: 1;
     transition: opacity 0.5s;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   
   .tooltip.active .tooltiptext {
@@ -301,9 +319,26 @@
         width: 100%;
     }
 
+    .social-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .hero-social-icon {
+        padding: 10px 20px;
+    }
+    
+    .hero-mail {
+        width: 100%;
+        max-width: 280px;
+    }
+    
     .tooltip .tooltiptext {
-        margin-left: 0px;
-        margin-top: 80px;
+        top: -35px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: 0;
+        margin-top: 0;
     }
 }
 

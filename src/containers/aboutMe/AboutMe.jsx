@@ -9,11 +9,11 @@ const AboutMe = () => {
                     About Me
                 </h1>
                 <p>
-                    Hi, I'm a software developer with 3 years of professional experience at General Motors Canada, where I work on Android-based in-vehicle infotainment apps. I’m also currently developing a personal project called Hacking Game, which is still in its early stages — you can learn more about it <a href="/hackinggame">here</a>.
+                    Hi, I’m a software developer passionate about creating engaging experiences through games and applications. I’m currently working on a personal project, which is still in its early stages and will post more about it soon on here.
                     <br /><br />
-                    My passion for programming started in 2015, creating mods and server plugins for PC games. Since then, I’ve built games using a variety of engines including Unity, Unreal Engine, Game Maker Studio, and Godot.
+                    My programming journey began in 2015, when I started building mods and server plugins for PC games. Since then, I’ve explored game development with engines like Unity, Unreal Engine, Game Maker Studio, and Godot.
                     <br /><br />
-                    In my spare time, I compose music for my games using FL Studio, explore new tech stacks, maintain a home lab, play board games, or work on new game ideas for fun.
+                    Outside of coding, I compose music for my games using FL Studio, experiment with new technologies, maintain a home lab, enjoy board games, and brainstorm new game ideas for fun.
                 </p>
             </div>
         </div>
