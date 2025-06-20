@@ -1,43 +1,70 @@
-.hero-container > video {
-    object-fit: cover;
+.hero-animation-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    position: fixed;
     z-index: -1;
-    filter: brightness(75%);
+    background: linear-gradient(135deg, 
+        rgba(4, 12, 24, 1) 0%, 
+        rgba(0, 40, 83, 0.8) 50%, 
+        rgba(4, 12, 24, 1) 100%);
 }
 
 .hero-container {
-    /* background: url('./images/img-home.jpg') center center/cover
-    no-repeat; */
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:baseline;
+    align-items: center;
     object-fit: contain;
+    position: relative;
 }
+
 .hero-container-main {
-    height: 100vh;
+    height: auto;
     max-width: 800px;
-    padding: 30px 30px 0 30px;
+    padding: 30px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
+
+.hero-container-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .hero-container-left > h1 {
-    color: #fff;
+    color: #64b5f6;
     font-size: 100px;
     font-family: var(--font-family);
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(100, 181, 246, 0.4);
 }
 
 .hero-container-left > p {
     margin-top: 8px;
-    color: #fff;
-    font-size: 16px;
-    font-family: var(--font-family);
+    color: #b0bec5;
+    font-size: 18px;
+    font-family: 'Courier New', monospace;
     font-weight: 400;
-    line-height: 1.6;
+    line-height: 1.8;
+    text-align: center;
+    max-width: 600px;
+    background: linear-gradient(135deg, rgba(176, 190, 197, 0.1) 0%, rgba(144, 164, 174, 0.05) 100%);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(100, 181, 246, 0.2);
+    backdrop-filter: blur(10px);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .hero-container-right {
@@ -46,6 +73,10 @@
 
 .social-links {
     margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 .hero-btns {
@@ -239,16 +270,13 @@
     }
 
     .hero-container {
-        align-items:center;
-    }
-
-    .hero-container video {
-        filter: brightness(25%);   
+        align-items: center;
     }
 
     .hero-container-main {
         width: 90%;
-        height: 900px;
+        height: auto;
+        padding: 20px;
     }
 }
 
@@ -257,6 +285,13 @@
         font-size: 50px;
     }
 
+    .hero-container-main {
+        padding: 15px;
+    }
+
+    .hero-container-left > p {
+        font-size: 14px;
+    }
 
     .btn-mobile {
         display: block;

@@ -1,18 +1,70 @@
 .projects-container {
-    padding: 10px;
+    padding: 25px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.projects-content-box {
+    background: rgba(20, 0, 20, 0.2);
+    border: 2px solid #ff0080;
+    border-radius: 8px;
+    padding: 40px;
+    margin: 10px;
+    max-width: 1000px;
+    width: 100%;
+    position: relative;
+    box-shadow: 
+        0 0 20px rgba(255, 0, 128, 0.3),
+        inset 0 0 20px rgba(255, 0, 128, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.projects-content-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 3px,
+            rgba(255, 0, 128, 0.04) 3px,
+            rgba(255, 0, 128, 0.04) 6px
+        ),
+        repeating-linear-gradient(
+            -45deg,
+            transparent,
+            transparent 3px,
+            rgba(255, 0, 128, 0.02) 3px,
+            rgba(255, 0, 128, 0.02) 6px
+        );
+    border-radius: 6px;
+    pointer-events: none;
+    z-index: 0;
 }
 
 .projects-container h1 {
-    margin: 10px 0px 10px 0px;
-    align-self: center;
+    margin: 0 0 30px 0;
+    text-align: center;
     font-size: 40px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.377);
-    padding: 4px;
+    border-bottom: 2px solid #ff0080;
+    padding: 4px 0 8px 0;
     font-family: var(--font-family);
+    position: relative;
+    z-index: 1;
+    color: #ff0080;
+    text-shadow: 0 0 10px rgba(255, 0, 128, 0.5);
+    background: none;
+    background-clip: unset;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
 }
 
 .projects-container-cards {
@@ -22,20 +74,32 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    position: relative;
+    z-index: 1;
+    gap: 20px;
 }
 
 .projects-container > p {
-    color: #fff;
+    color: #ff80c0;
     padding: 4px;
     font-family: var(--font-family);
+    position: relative;
+    z-index: 1;
 }
 
-
 @media screen and (max-width:1390px) {
-    .projects-container h1 {
-        margin: 10px 0px 10px 0px;
+    .projects-content-box {
+        margin: 15px;
+        padding: 30px;
+        max-width: 95%;
     }
+    
+    .projects-container h1 {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    
     .projects-container-cards {
-        padding-left: 0px;
+        gap: 15px;
     }
 }
