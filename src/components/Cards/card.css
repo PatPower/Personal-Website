@@ -167,6 +167,65 @@
         z-index: -1;
         filter: brightness(35%);
     }
+    
+    /* Add styling for GIF images on mobile */
+    .video-container img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: -1;
+        filter: brightness(35%);
+    }
+    
+    /* Fix skills section for mobile */
+    .skillBox-area-card {
+        position: relative;
+        bottom: auto;
+        margin-top: 8px;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+    
+    .skillBox-area-card .skillBox {
+        margin-right: 4px;
+        margin-bottom: 4px;
+        padding: 3px 6px;
+    }
+    
+    .skillBox-area-card .skillBox h5 {
+        font-size: 10px;
+    }
+    
+    .button-area {
+        position: relative;
+        bottom: auto;
+        margin-top: 8px;
+    }
+    
+    .card-content {
+        margin: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        height: calc(100% - 1rem);
+        position: relative;
+        z-index: 1;
+    }
+    
+    .card-body {
+        flex: 1;
+        overflow: hidden;
+    }
+    
+    .card-body p {
+        font-size: 12px;
+        line-height: 1.3;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    
     .card-btn button:hover{
         background:rgba(256,256,252,0.8);
     }

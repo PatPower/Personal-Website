@@ -2,10 +2,10 @@ import React, { useRef } from 'react'
 import { Link } from 'react-router-dom';
 import './card.css'
 
-function Card({ title, videoUrl, body, skills, githubUrl, demoUrl, website }) {
+function Card({ title, videoUrl, gifUrl, body, skills, githubUrl, demoUrl, website }) {
   const vidRef = useRef(null);
   const playVideo = () => {
-    if (vidRef.current) {
+    if (vidRef.current && !gifUrl) {
       vidRef.current.play().catch(error => {
         // Handle autoplay failure silently
         console.log('Video autoplay failed:', error);
@@ -13,7 +13,7 @@ function Card({ title, videoUrl, body, skills, githubUrl, demoUrl, website }) {
     }
   }
   const stopVideo = () => {
-    if (vidRef.current) {
+    if (vidRef.current && !gifUrl) {
       vidRef.current.pause();
     }
   }
@@ -21,17 +21,25 @@ function Card({ title, videoUrl, body, skills, githubUrl, demoUrl, website }) {
     <div className="card-container" onMouseEnter={playVideo} onMouseLeave={stopVideo}>
 
       <div className="video-container">
-        <video
-          ref={vidRef}
-          src={videoUrl}
-          loop
-          muted
-          playsInline
-          preload="metadata"
-          webkit-playsinline="true"
-          controls={false}
-          disablePictureInPicture
-        />
+        {gifUrl ? (
+          <img
+            src={gifUrl}
+            alt={title}
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
+        ) : (
+          <video
+            ref={vidRef}
+            src={videoUrl}
+            loop
+            muted
+            playsInline
+            preload="metadata"
+            webkit-playsinline="true"
+            controls={false}
+            disablePictureInPicture
+          />
+        )}
       </div>
       <div className="card-content">
         <div className="card-title">
